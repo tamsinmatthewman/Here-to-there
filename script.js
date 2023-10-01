@@ -74,7 +74,7 @@ const wavelengthCards = [
   ["Best Day of the Year", "Worst Day of the Year"]
 ];
 
-
+let cardPile = wavelengthCards;
 
 
 
@@ -117,10 +117,14 @@ function spin() {
 }
 
 function newCard() {
-	const randomItem = Math.floor(Math.random() * wavelengthCards.length)
-	const pair = wavelengthCards[randomItem]
-	rightCard.innerHTML = pair[0]
-	leftCard.innerHTML = pair[1]
+	if (cardPile.length == 0) {
+		let cardPile = wavelengthCards;
+	}
+	const randomItem = Math.floor(Math.random() * cardPile.length);
+	const pair = cardPile[randomItem]
+	const removeOne = cardPile.splice(randomItem, 1);
+	rightCard.innerHTML = pair[0];
+	leftCard.innerHTML = pair[1];
 }
 
 function moveDial(inc) {
