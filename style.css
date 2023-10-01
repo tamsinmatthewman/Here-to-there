@@ -1,0 +1,156 @@
+body {
+	touch-action: manipulation;
+}
+
+#container {
+
+	height: 100%;
+	width: 100%;
+}
+
+#background {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+#segment {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 15;
+	transform-origin: 50% 75%;
+}
+
+#cover {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 20;
+	transition: transform 1s ease;
+	transform-origin: 50% 75%;
+}
+
+#buttons {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 30;
+}
+
+#dial {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 25;
+	transform-origin: 50% 75%;
+}
+
+#leftCard {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 40;
+}
+
+#rightCard {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 40;
+}
+
+.cardText {
+	position: absolute;
+	top: 89%;
+	width: 24%;
+	height: 12%;
+	z-index: 50;
+	color: rgb(241, 222, 199);
+	font: 2.3em "Impact";
+}
+
+#leftText {
+	left: 16%;
+}
+
+#rightText {
+	left: 61%;
+}
+
+#reveal {
+	position: absolute;
+	height: 10%;
+	width: 12%;
+	z-index: 40;
+	left: 83%;
+	top: 76%;
+}
+
+#peak {
+	position: absolute;
+	height: 10%;
+	width: 10%;
+	z-index: 40;
+	left: 28%;
+	top: 76%;
+}
+
+#spin {
+	position: absolute;
+	height: 10%;
+	width: 12%;
+	z-index: 40;
+	left: 6%;
+	top: 76%;
+}
+
+#new {
+	position: absolute;
+	height: 10%;
+	width: 12%;
+	z-index: 40;
+	left: 62%;
+	top: 76%;
+}
+
+#bPlus {
+	position: absolute;
+	height: 5%;
+	width: 3%;
+	z-index: 40;
+	left: 55%;
+	top: 76%;
+	touch-action: manipulation;
+}
+
+#sPlus {
+	position: absolute;
+	height: 5%;
+	width: 3%;
+	z-index: 40;
+	left: 53%;
+	top: 80%;
+	touch-action: manipulation;
+}
+
+#bMinus {
+	position: absolute;
+	height: 5%;
+	width: 3%;
+	z-index: 40;
+	left: 42%;
+	top: 76%;
+	touch-action: manipulation;
+}
+
+#sMinus {
+	position: absolute;
+	height: 5%;
+	width: 3%;
+	z-index: 40;
+	left: 45%;
+	top: 80%;
+	touch-action: manipulation;
+}

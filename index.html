@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width" />
+  	<title>HERE TO THERE</title>
+  	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<meta name="viewport" content= "width=device-width, user-scalable=no">
+	<div id="container">
+   	<img id="background" src="Radio.pdf" alt="Radio Background">
+      <img id="cover" src="Cover.pdf" alt="Rotating Cover">
+		<img id="segment" src="Segment.pdf" alt="Segment">
+      <img id="buttons" src="Buttons.pdf" alt="Buttons">
+		<img id="dial" src="Pointer.pdf" alt="Pointer">
+      <img id="leftCard" src="LeftCard.pdf" alt="Lcard">
+      <img id="rightCard" src="RightCard.pdf" alt="Rcard">
+		<div id="leftText" class="cardText"></div>
+		<div id="rightText" class="cardText"></div>
+		<div id="reveal" ontouchstart="rotate()"></div>
+		<div id="peak" ontouchstart="rotate()"></div>
+		<div id="spin" ontouchstart="spin()"></div>
+		<div id="new" ontouchstart="newCard()"></div>
+		<div id="bPlus" ontouchstart="moveDial(1)"></div>
+		<div id="sPlus" ontouchstart="moveDial(0.5)"></div>
+		<div id="bMinus" ontouchstart="moveDial(-1)"></div>
+		<div id="sMinus" ontouchstart="moveDial(-0.5)"></div>
+		<div></div>
+	</div>
+
+  	<script src="script.js"></script>
+</body>
+</html>
