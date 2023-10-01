@@ -5,5 +5,19 @@
   "display": "standalone",
   "background_color": "#fdfdfd",
   "theme_color": "#db4938",
-  "orientation": "landscape-primary"
+  "orientation": "landscape-primary",
+  "icons": [
+    {
+      "src": "small-icon.svg",
+      "sizes": "48x48"
+    },
+    {
+      "src": "medium-icon.svg",
+      "sizes": "72x72 96x96 128x128 256x256"
+    },
+    {
+      "src": "large-icon.svg",
+      "sizes": "257x257"
+    }
+  ]
 }
