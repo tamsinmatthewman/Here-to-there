@@ -1,17 +1,17 @@
 const staticGame = "here-to-there-v1";
 const assets = [
 	"/",
-	"/index.html",
-	"/style.css",
-	"/script.js",
-	"/Buttons.pdf",
-	"/Cover.pdf",
-	"/LeftCard.pdf",
-	"/Pointer.pdf",
-	"/Radio.pdf",
-	"/RightCard.pdf",
-	"/Segment.pdf",
-	"/Spin.pdf"
+	"index.html",
+	"style.css",
+	"script.js",
+	"Buttons.pdf",
+	"Cover.pdf",
+	"LeftCard.pdf",
+	"Pointer.pdf",
+	"Radio.pdf",
+	"RightCard.pdf",
+	"Segment.pdf",
+	"Spin.pdf"
 ];
 
 self.addEventListener("install", installEvent => {
