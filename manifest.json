@@ -1,0 +1,10 @@
+{
+	"name": "Here-To-There",
+	"short_name": "Here2There",
+	"short_name": "DevCoffee",
+   "start_url": "index.html",
+   "display": "standalone",
+   "background_color": "#fdfdfd",
+   "theme_color": "#db4938",
+   "orientation": "landscape-primary",
+}

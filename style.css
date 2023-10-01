@@ -2,6 +2,10 @@ body {
 	touch-action: manipulation;
 }
 
+main {
+	max-width: 900px;
+}
+
 #container {
 
 	height: 100%;
@@ -44,6 +48,7 @@ body {
 	height: 100%;
 	width: 100%;
 	z-index: 25;
+	transition: transform 0.4s ease;
 	transform-origin: 50% 75%;
 }
 
@@ -52,6 +57,7 @@ body {
 	height: 100%;
 	width: 100%;
 	z-index: 40;
+	transition: transform 0.4s ease;
 }
 
 #rightCard {
@@ -59,6 +65,7 @@ body {
 	height: 100%;
 	width: 100%;
 	z-index: 40;
+	transition: transform 0.4s ease;
 }
 
 .cardText {
@@ -77,6 +84,15 @@ body {
 
 #rightText {
 	left: 61%;
+}
+
+#spinIcon {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 35;
+	transition: transform 1s ease;
+	transform-origin: 9.45% 80%;
 }
 
 #reveal {
@@ -152,5 +168,15 @@ body {
 	z-index: 40;
 	left: 45%;
 	top: 80%;
+	touch-action: manipulation;
+}
+
+#middle {
+	position: absolute;
+	height: 14%;
+	width: 8%;
+	z-index: 40;
+	left: 46%;
+	top: 67%;
 	touch-action: manipulation;
 }

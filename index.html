@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="manifest" href="manifest.json" />
+	<meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+	<meta name="theme-color" content="#db4938" />
 	<meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width" />
   	<title>HERE TO THERE</title>
   	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
+	<main>
 	<meta name="viewport" content= "width=device-width, user-scalable=no">
 	<div id="container">
    	<img id="background" src="Radio.pdf" alt="Radio Background">
@@ -18,6 +22,7 @@
       <img id="rightCard" src="RightCard.pdf" alt="Rcard">
 		<div id="leftText" class="cardText"></div>
 		<div id="rightText" class="cardText"></div>
+		<img id="spinIcon" src="Spin.pdf" alt="Spin">
 		<div id="reveal" ontouchstart="rotate()"></div>
 		<div id="peak" ontouchstart="rotate()"></div>
 		<div id="spin" ontouchstart="spin()"></div>
@@ -26,8 +31,9 @@
 		<div id="sPlus" ontouchstart="moveDial(0.5)"></div>
 		<div id="bMinus" ontouchstart="moveDial(-1)"></div>
 		<div id="sMinus" ontouchstart="moveDial(-0.5)"></div>
-		<div></div>
+		<div id="middle" ontouchstart="resetRot()"></div>
 	</div>
+	</main>
 
   	<script src="script.js"></script>
 </body>

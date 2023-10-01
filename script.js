@@ -2,10 +2,14 @@ const cover = document.getElementById('cover');
 const segment = document.getElementById('segment');
 const leftCard = document.getElementById('leftText');
 const rightCard = document.getElementById('rightText');
+const leftCardd = document.getElementById('leftCard');
+const rightCardd = document.getElementById('rightCard');
 const dial = document.getElementById('dial');
+const spinIcon = document.getElementById('spinIcon');
 let isRotated = false;
 let currentRotation = 0;
 const maxRotation = 90 * 12.5 / 13;
+let n = 1;
 
 
 const wavelengthCards = [
@@ -108,6 +112,8 @@ function getRandomRotation() {
 function spin() {
     const rotationDegree = getRandomRotation();
     segment.style.transform = `rotate(${rotationDegree}deg)`;
+	 spinIcon.style.transform = `rotate(${360*n}deg)`;
+	 n += 1;
 }
 
 function newCard() {
@@ -125,3 +131,16 @@ function moveDial(inc) {
 	}
 }
 
+function resetRot() {
+	currentRotation = 0;
+	dial.style.transform = `rotate(${currentRotation}deg)`;
+}
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker
+      .register("/serviceWorker.js")
+      .then(res => console.log("service worker registered"))
+      .catch(err => console.log("service worker not registered", err))
+  })
+}
