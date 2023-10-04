@@ -8,9 +8,10 @@
 	<meta charset="UTF-8">
   	<title>HERE TO THERE</title>
   	<link rel="stylesheet" href="style.css" />
-	<meta name="viewport" content= "width=device-width, user-scalable=no">
+	
 </head>
 <body>
+	<meta name="viewport" content= "width=device-width, user-scalable=no">
 	<main>
 	<div id="magic-wrapper">
 	<div id="container">
@@ -33,6 +34,12 @@
 		<div id="bMinus" ontouchstart="moveDial(-1)"></div>
 		<div id="sMinus" ontouchstart="moveDial(-0.5)"></div>
 		<div id="middle" ontouchstart="resetRot()"></div>
+		<div id="PlusA" class="points" ontouchstart="points(teamA, 1)"></div>
+		<div id="PlusB" class="points" ontouchstart="points(teamB, 1)"></div>
+		<div id="MinusA" class="points" ontouchstart="points(teamA, -1)"></div>
+		<div id="MinusB" class="points" ontouchstart="points(teamB, -1)"></div>
+		<div id="pointsA" class="pointsText">0</div>
+		<div id="pointsB" class="pointsText">0</div>
 	</div>
 	</div>
 	<div id="hide"></div>

@@ -6,6 +6,8 @@ const leftCardd = document.getElementById('leftCard');
 const rightCardd = document.getElementById('rightCard');
 const dial = document.getElementById('dial');
 const spinIcon = document.getElementById('spinIcon');
+const teamA = document.getElementById('pointsA');
+const teamB = document.getElementById('pointsB');
 let isRotated = false;
 let currentRotation = 0;
 const maxRotation = 90 * 12.5 / 13;
@@ -138,6 +140,10 @@ function moveDial(inc) {
 function resetRot() {
 	currentRotation = 0;
 	dial.style.transform = `rotate(${currentRotation}deg)`;
+}
+
+function points(team, p) {
+	team.innerHTML = parseInt(team.innerHTML) + p;
 }
 
 if ("serviceWorker" in navigator) {
