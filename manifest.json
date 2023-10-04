@@ -3,8 +3,8 @@
   "short_name": "Here2There",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#fdfdfd",
-  "theme_color": "#db4938",
+  "background_color": "#d9bca1",
+  "theme_color": "#67402b",
   "orientation": "landscape-primary",
   "icons": [
     {
